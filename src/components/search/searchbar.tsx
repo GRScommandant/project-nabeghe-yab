@@ -20,11 +20,11 @@ const SearchBar : React.FC<SearchbarProps> = ({searchQuery , setSearchQuery , on
     return (
         <div className="flex flex-row items-start w-full h-full gap-2.5 p-2">
             <Input
-                placeholder="جست و جو"
+                placeholder="جستوجو.."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <Button variant="socialT" className="w-13 h-10" onClick={handleSearch}>
+            <Button variant="socialT" className="w-[50px] h-[39px]" onClick={handleSearch}>
                 <img src={magnifier.src} alt="جست و جو" className="h-4 w-5" />
             </Button>
         </div>

@@ -5,17 +5,11 @@ import {Separator} from "@/components/ui/separator";
 export default function Shop() {
     return (
         <>
-            <div className="flex flex-row-reverse w-full">
+            <div className="flex flex-col items-center justify-center w-full">
                 <div className="flex flex-col items-end w-[85%] ">
-                    <BlogBuilder />
+                    <BlogBuilder/>
                 </div>
-                <div className="flex flex-col items-start w-[15%] mt-3">
-                    <div className="flex flex-col items-center justify-center w-full">
-                        <Separator className="my-1"/>
-                    </div>
-                    <Searchfilters />
                 </div>
-            </div>
         </>
     );
 }

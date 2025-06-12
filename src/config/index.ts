@@ -33,16 +33,22 @@ export const siteConfig = {
             href:'/',
             icon:null
         },
+        tests:{
+            label:'آزمون ها' ,
+            href:'/testpage',
+            icon:null
+        },
         news :{
             label:'اخبار',
             href:'/blogpage',
             icon:null
         },
-        tests:{
-            label:'آزمون ها' ,
-            href:'/testpage',
+        news_detail:{
+            label:'',
+            href:'/blogpage/:id',
             icon:null
-        }
+        },
+
 
     }
 } as const

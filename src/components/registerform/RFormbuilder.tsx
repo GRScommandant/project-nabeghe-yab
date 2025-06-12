@@ -129,16 +129,16 @@ export default function RFormbuilder({ form: form_config }: FormBuilderProps) {
                             control={form.control}
                             name={f.name}
                             render={({ field }) => (
-                                <FormItem className="space-y-0">
-                                    <FormLabel className="space-y-0">{f.label}</FormLabel>
-                                    <FormControl className="space-y-0">
+                                <FormItem className="">
+                                    <FormLabel className="">{f.label}</FormLabel>
+                                    <FormControl className="">
                                         <Field
                                             placeholder={f.placeholder}
                                             type={f.type}
                                             {...field}
                                         />
                                     </FormControl>
-                                    <FormDescription className="space-y-0">{f.description}</FormDescription>
+                                    <FormDescription className="">{f.description}</FormDescription>
                                     <FormMessage />
                                 </FormItem>
                             )}
